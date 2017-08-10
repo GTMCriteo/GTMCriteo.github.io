@@ -4,7 +4,8 @@
 <script>		
 function random() {
 var Products = ["ProductID_1","ProductID_2","ProductID_3","ProductID_4"],
-var ProductToUse = Products[Math.floor(Math.random() * Products.length)];
+ProductToUse = Products[Math.floor(Math.random() * Products.length)];
+var ProductId = ProductToUse;
 }
 </script>
 <script type="text/javascript">
@@ -12,7 +13,7 @@ dataLayer = [];
 dataLayer.push({
 'PageType':'Product',
 'email': 'mailtestcri@gmail.com',
-'ProductID': ProductToUse
+'ProductID': ProductId
 });
 </script>
 		<!-- Google Tag Manager -->
