@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Basket</title>
+<script>		
+function random() {
+var Products = ["ProductID_1","ProductID_2","ProductID_3","ProductID_4"],
+ProductToUse1 = values[Math.floor(Math.random() * values.length)];
+ProductToUse2 = values[Math.floor(Math.random() * values.length)];
+var price1 = Math.floor((Math.random() * 1000) + 1);
+var price2 = Math.floor((Math.random() * 1000) + 1);
+var quantity = [1,2,3,4];
+var quantitytouse1 = Math.floor(Math.random() * quantity.length);
+var quantitytouse2 = Math.floor(Math.random() * quantity.length);
+var TransactionIDnow = Date.now();
+</script>
+<script type="text/javascript">
+var product_list = [];
+product_list.push(
+ { id: ProductToUse1, price: price1, quantity: quantitytouse1 },
+ { id: ProductToUse2, price: price2, quantity: quantitytouse2 }
+'PageType':'TransactionPage',
+'email': 'mailtestcri@gmail.com'
+'ProductID': product_list
+'TransactionID': TransactionIDnow
+});
+</script>
+		<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PTDJGF2');</script>
+<!-- End Google Tag Manager -->
+	</head>
+    <body>
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PTDJGF2"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+</script>
+<p>This is a TransactionPage type page with a "TransactionPage tag"
+Choose page that you whant to check:</p>
+	
+<a href="https://GTMCriteo.github.io/home.html">Home tag page</a>
+<a href="https://GTMCriteo.github.io/list.html">Listing tag page</a>	
+<a href="https://GTMCriteo.github.io/product.html">Product tag page</a>
+<a href="https://GTMCriteo.github.io/basket.html">Basket tag page</a>
+<a href="https://GTMCriteo.github.io/trunsaction.html">Transaction tag page</a>
+    </body>
+</html>
