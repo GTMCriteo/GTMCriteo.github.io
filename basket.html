@@ -2,9 +2,8 @@
     <head>
         <title>Basket</title>
 <script>		
-function random() {
 var Products = ["ProductID_1","ProductID_2","ProductID_3","ProductID_4"],
-ProductToUse1 = values[Math.floor(Math.random() * values.length)];
+ProductToUse1 = values[Math.floor(Math.random() * values.length)],
 ProductToUse2 = values[Math.floor(Math.random() * values.length)];
 var price1 = Math.floor((Math.random() * 1000) + 1);
 var price2 = Math.floor((Math.random() * 1000) + 1);
@@ -17,6 +16,7 @@ var product_list = [];
 product_list.push(
  { id: ProductToUse1, price: price1, quantity: quantitytouse1 },
  { id: ProductToUse2, price: price2, quantity: quantitytouse2 }
+	)
 dataLayer = [];
 dataLayer.push({
 'PageType':'Basket',
