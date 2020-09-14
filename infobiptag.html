@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Basket</title>
+<script>
+(function(e,t,n,r){e.PeopleEventsObject=r;e[r]=e[r]||{init(t){e[r].apiKey=t},
+setPerson(t){e[r].person=t},track(){(e[r].q=e[r].q||[]).push(arguments)},updatePerson(t)
+{e[r].personToUpdate={person:t}}};var s=t.createElement("script");
+var p=t.getElementsByTagName("script")[0];s.async=1;s.src=n;p.parentNode.insertBefore(s,p)})
+(window,document,'https://s3.eu-central-1.amazonaws.com/portal-cdn-production/people-events-sdk/pe.latest-1.js','pe');
+pe.init('c0e84cfa36abc27de3a6905a8eb994d9-e574bb30-772f-4a24-a34e-fc6a0c8c55b5');
+</script>
+
+<script>		
+var personAttributeValue = true
+</script>
+
+<script>
+    // set person using email
+    pe.setPerson({ email: 'mailtestcri@gmail.com' });
+</script>
+
+<script>
+    pe.track("isMe", { itIsMe: personAttributeValue });
+</script>
+
+		<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PTDJGF2');</script>
+<!-- End Google Tag Manager -->
+	</head>
+    <body>
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PTDJGF2"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+</script>
+<p>This is Infobip's Custom Tag example</p>
+    </body>
+</html>
