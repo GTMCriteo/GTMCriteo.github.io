@@ -84,6 +84,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 </script>
+<script>
+var menuBtn = $('.messenger-btn'),
+menu = $('.messenger-links');
+menuBtn.on('click', function() {
+if ( menu.hasClass('show') ) {
+menu.removeClass('show');
+} else {
+menu.addClass('show');
+}
+});
+/*  Скрыть div при клике в любом месте сайта кроме самого div */
+$(document).mouseup(function (e){
+var div = $('.messenger');
+if (!div.is(e.target)
+&& div.has(e.target).length === 0) {
+$('.messenger-links').removeClass('show');
+}
+});
+ </script>
 <div class="container">
   <div class="messenger">
     <div title="Чат с менеджером" class="messenger-btn"><img src="https://volgo-prime.ru/img/icons/chat.svg" alt="Чат с менеджером" /></div>
@@ -97,24 +116,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </div>
 	
-<script>
-  var menuBtn = $('.messenger-btn'),
-      menu    = $('.messenger-links');
-  menuBtn.on('click', function() {
-      if ( menu.hasClass('show') ) {
-          menu.removeClass('show');
-      } else {
-          menu.addClass('show');
-      }
-  });
-  $(document).mouseup(function (e){ 
-    var div = $('.messenger'); 
-    if (!div.is(e.target) 
-        && div.has(e.target).length === 0) {
-      $('.messenger-links').removeClass('show');
-    }
-  });
- </script>
 
 <p>This is Infobip TAG via GTM</p>
     </body>
