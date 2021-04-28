@@ -1,76 +1,7 @@
 <html>
     <head>
         <title>JustGTM</title>
-	    
-	    <style>
-* {
-  box-sizing: border-box;
-}
-.container {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: right;
-  justify-content: right;
-  background-color: #263238;
-}
-.messenger {
-  display: block;
-  position: fixed;
-  right: 8%;
-  bottom: 3%;
-  width: 260px;
-  height: 60px;
-  /* overflow: hidden; */
-}
-.messenger-btn {
-    padding: 14px;
-    display: block;
-    width: 60px;
-    height: 60px;
-    border-radius: 60px;
-    background-color: #e58433;
-    position: absolute;
-    right: 0;
-    top: 0;
-    cursor: pointer;
-    z-index: 2;
-  }
-.messenger-btn img {
-  width: 32px;
-  height: 32px;
-}
-.messenger-links {
-  position: absolute;
-  left: 0px;
-  top: 10px;
-  width: 240px;
-  transform: scale(0);
-  transform-origin: 100% 50%;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-  z-index: 0;
-}
-.messenger-links.show {
-  left: -45px;
-  transform: scale(1);
-}
-.messenger-links a {
-  width: 40px;
-  margin-left: 4px;
-}
-.messenger-links img {
-  max-width: 40px;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.messenger-links a:hover img {
-  transform: scale(1.1);
-  text-decoration: none;
-}
-  </style>
+	   
 
 		<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -84,6 +15,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="messenger">
                 <div title="Чат с Infobip" class="messenger-btn">
                     <div class="messenger-btn-img">
+			     <svg style="display: none;" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <img src="https://volgo-prime.ru/img/icons/chat.svg" alt="Чат с Infobip">
 			</div>
                 </div>
