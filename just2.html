@@ -257,6 +257,27 @@ window.onclick = function(event) {
 
             liveChat('init', '6343de57-79d2-4e87-9040-0d7e85f13c06');
         </script>
+	    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+/* Здесь прописана логика самого нажатия на кнопку */
+<script>
+var menuBtn = $('.messenger-btn'),
+      menu    = $('.messenger-links');
+  menuBtn.on('click', function() {
+      if ( menu.hasClass('show') ) {
+          menu.removeClass('show');
+      } else {
+          menu.addClass('show');
+      }
+  });
+  $(document).mouseup(function (e){ 
+    var div = $('.messenger'); 
+    if (!div.is(e.target) 
+        && div.has(e.target).length === 0) {
+      $('.messenger-links').removeClass('show');
+    }
+  });
+</script>
 
 
 		<!-- Google Tag Manager -->
