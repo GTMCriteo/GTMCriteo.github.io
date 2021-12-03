@@ -41,7 +41,71 @@ liveChat('init', 'cc309a7c-7a83-4daa-8e0c-c766d9e74afb');
         </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
+<script>
+function a() {
+        var e = (0,
+        o.default)(".messenger-btn")
+          , t = (0,
+        o.default)(".messenger-links");
+        e.on("click", function() {
+            t.hasClass("show") ? (t.removeClass("show"),
+            (0,
+            o.default)("#ib-button-messaging").attr("style", ""),
+            (0,
+            o.default)(".messenger-btn-img svg").attr("style", "display: none"),
+            (0,
+            o.default)(".messenger-btn-img img").attr("style", "display: block"),
+            (0,
+            o.default)(".bip-container .messenger-btn").attr("style", "background: #ff6a13;"),
+            "visible" == (0,
+            o.default)(".ib-widget-wrapper").css("visibility") && (0,
+            o.default)("#ib-button-messaging").trigger("click")) : (t.addClass("show"),
+            (0,
+            o.default)("#ib-button-messaging").attr("style", "transform: scale(1);"),
+            (0,
+            o.default)(".messenger-btn-img svg").attr("style", "display: block; margin-top: 21px; margin-left: 21px;"),
+            (0,
+            o.default)(".messenger-btn-img img").attr("style", "display: none"),
+            (0,
+            o.default)(".bip-container .messenger-btn").attr("style", "background: #A1AEB2;"))
+        });
+        var i = setInterval(function() {
+            (0,
+            o.default)("#ib-button-messaging").length > 0 && ((0,
+            o.default)(".bip-container").attr("style", ""),
+            clearTimeout(i))
+        }, 1e3);
+        (0,
+        o.default)(document).mouseup(function(e) {
+            if (e.target.id.length > 0 && "ib-button-messaging-icon" != e.target.id || 0 == e.target.id.length) {
+                var t = (0,
+                o.default)(".messenger");
+                t.is(e.target) || 0 !== t.has(e.target).length || ((0,
+                o.default)(".messenger-links").removeClass("show"),
+                (0,
+                o.default)("#ib-button-messaging").attr("style", ""),
+                (0,
+                o.default)(".messenger-btn-img svg").attr("style", "display: none"),
+                (0,
+                o.default)(".messenger-btn-img img").attr("style", "display: block"),
+                (0,
+                o.default)(".bip-container .messenger-btn").attr("style", "background: #ff6a13;"),
+                "visible" == (0,
+                o.default)(".ib-widget-wrapper").css("visibility") && (0,
+                o.default)("#ib-button-messaging").trigger("click"))
+            }
+        })
+    }
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    }),
+    t.buildInfoBip = a;
+    var s = i(0)
+      , o = n(s)
+}
+</script>                                                                               
+                                                                              
  <link href="https://www.invitro.ru/local/templates/invitro_main/src/style/main.css?1638523174" type="text/css"  data-template-style="true"  rel="preload stylesheet" />
+
 </body>
 </html> 
